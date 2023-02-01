@@ -43,35 +43,35 @@
 	    connect: "lower",
 	});
 
-	Bslider = setupSlider(sliders[1], "Bx =  ", {
+	Bslider = setupSlider(sliders[1], "B =  ", {
 	    start: 0.5,
 	    range: {"min": -1.0, "max": 1.0},
 	    orientation: "horizontal",
 	    connect: "lower",
 	});
 
-	Cslider = setupSlider(sliders[2], "Cy =  ", {
+	Cslider = setupSlider(sliders[2], "C =  ", {
 	    start: 0.5,
 	    range: {"min": -1.0, "max": 1.0},
 	    orientation: "horizontal",
 	    connect: "lower",
 	});
 
-	Dslider = setupSlider(sliders[3], "Dxy = ", {
+	Dslider = setupSlider(sliders[3], "D = ", {
 	    start: 0.5,
 	    range: {"min": -1.0, "max": 1.0},
 	    orientation: "horizontal",
 	    connect: "lower",
 	});
 
-	Eslider = setupSlider(sliders[4], "Ex<sup>2</sup> = ", {
+	Eslider = setupSlider(sliders[4], "E = ", {
 	    start: 0.5,
 	    range: {"min": -1.0, "max": 1.0},
 	    orientation: "horizontal",
 	    connect: "lower",
 	});
 
-	Fslider = setupSlider(sliders[5], "Fy<sup>2</sup> = ", {
+	Fslider = setupSlider(sliders[5], "F = ", {
 	    start: 0.5,
 	    range: {"min": -1.0, "max": 1.0},
 	    orientation: "horizontal",
