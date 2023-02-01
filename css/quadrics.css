@@ -1,0 +1,194 @@
+/*  Main body  */
+
+body {
+    position: relative;
+    background: white;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Section */
+
+section {
+    overflow: hidden;  /* Keeps floats inside section */
+}
+		  
+
+/* Navigation bar  */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #002058;
+}
+
+nav li {
+    float: left;
+    color: white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5ex 0.5em;
+    text-decoration: none;
+}
+
+nav li a.active {
+    background-color: #E87722;
+}
+
+nav li a:hover {
+    background-color: #000;
+}
+
+
+/* h1 gets used as the title, and that's it */
+h1 {
+    padding: 1.5ex 0 1.5ex 0;
+    text-align: center; 
+    background: #002058;
+    color: white;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    vertical-align: middle;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: bold;
+    font-size: 130%;
+    margin: 0;
+}
+
+/* h3 gets used as section headers */
+h2 {
+    padding: 1ex 0 1ex 1em;
+    text-align: left; 
+    background: #002058;
+    color: white;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 110%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    vertical-align: middle;
+}
+
+
+div.eqn{
+    margin: 1em;
+    display: inline-block;
+}
+
+div.eqnbox{
+    margin: auto;
+}
+
+/* Styling the 3D manipulation boxes */
+
+div.threecontainer {
+    border: solid #EEE 1px;
+    margin: auto;
+    width: 32em;
+    background: #FAFAFA;
+    border-radius: 0.5em;
+}
+
+canvas.threejs {
+    /* border: solid #EEE 1px; */
+    width: 30em;
+    height: 40em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+div.threecontrols {
+    margin-bottom: 0.8em;
+    /* border: solid #EEE 1px; */
+}
+
+div.slidergroup {
+    /* border: solid #EEE 1px; */
+}
+
+ div.sliderlabel {
+     margin: 8px;
+     display: inline-block;
+     height: 18px;
+     font-size: 16px;
+     padding: 2px;
+     min-width: 50px;
+ }
+
+ div.threeslider {
+     margin: 8px;
+     display: inline-block;
+     vertical-align: middle;
+     width: 23em;
+ }
+
+div.threecontrols button{
+    /* Only changed at small sizes */
+}
+
+.noUi-handle{
+    background: #CCC;
+}
+
+.noUi-background{
+    background: #EEE
+}
+
+.noUi-connect{
+    background: #606EB2
+}
+
+/* Some tweaks to make it useable, if not elegant, on smaller devices */
+
+@media screen and (max-device-width: 35em) {
+    div.threecontainer{
+	width: 27em;
+    }
+    canvas.threejs {
+	width: 25em;
+	height: 33.3334em;
+    }
+
+    div.threeslider {
+        width: 19em;
+    }
+
+}
+
+@media screen and (max-device-width: 30em) {
+    div.threecontainer{
+	width: 22em;
+    }
+    canvas.threejs {
+	width: 20em;
+	height: 26.6667em;
+    }
+
+    div.threeslider {
+        width: 14em;
+    }
+
+}
+
+@media screen and (max-device-width: 25em) {
+    div.threecontainer{
+	width: 17em;
+    }
+    canvas.threejs {
+	width: 15em;
+	height: 20em;
+    }
+
+    div.threeslider {
+        width: 9em;
+    }
+}

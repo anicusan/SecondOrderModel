@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="static_images/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="static_images/favicon.ico" type="image/x-icon" >
+    <title>
+	IGQS: Hyperbolic Paraboloid 
+    </title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" async
+	    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+    <script src="js/lib/three.min.js"></script>
+    <script src="js/lib/TrackballControls.js"></script>
+    <script src="js/lib/nouislider.min.js"></script>
+    <script src="js/axes.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/lib/nouislider.min.css" type="text/css" >
+    <link rel="stylesheet" href="css/quadrics.css" type="text/css" >
+</head>
+
+<body>
+<h1>Design of Experiments-like Second Order Model</h1>
+
+<section>
+    <p>The complete <b>second order model</b> is given by the equation
+	$$f(x, y) = A + Bx + Cx + Dxy + Ex^2 + Fy^2$$
+
+    <div class="threecontainer" id="hypparab">
+	<canvas class="threejs"></canvas>
+	<div class="threecontrols">
+
+	    <!-- A slider -->
+	    <div class="slidergroup">
+		<div class="sliderlabel">
+		    A = 1.0
+		</div>
+		<div class="threeslider">
+		</div>
+	    </div>
+
+
+	    <!-- B slider -->
+	    <div class="slidergroup">
+		<div class="sliderlabel">
+		    B = 1.0
+		</div>
+		<div class="threeslider">
+		</div>
+	    </div>
+
+	    <!-- C slider -->
+	    <div class="slidergroup">
+		<div class="sliderlabel">
+		    C = 1.0
+		</div>
+		<div class="threeslider">
+		</div>
+	    </div>
+
+	    <!-- D slider -->
+	    <div class="slidergroup">
+		<div class="sliderlabel">
+		    D = 1.0
+		</div>
+		<div class="threeslider">
+		</div>
+	    </div>
+
+	    <!-- E slider -->
+	    <div class="slidergroup">
+		<div class="sliderlabel">
+		    E = 1.0
+		</div>
+		<div class="threeslider">
+		</div>
+	    </div>
+
+	    <!-- F slider -->
+	    <div class="slidergroup">
+		<div class="sliderlabel">
+		    F = 1.0
+		</div>
+		<div class="threeslider">
+		</div>
+	    </div>
+
+	    <!-- Other plot controls -->
+
+	    <div class="slidergroup">
+		<div class="sliderlabel">
+		    Gridlines: <input type="checkbox">
+		</div>
+		<div class="sliderlabel">
+		    Domain:
+		    <select>
+			<option value="square" selected="selected">Square</option>
+			<option value="disk">Disk</option>
+		    </select>
+		</div>
+		<div class="sliderlabel">
+		  <button>Reset view</button>
+	      </div>
+	    </div>
+	</div>
+    </div>
+
+  <p> Plotting example made by Andrei Leonard Nicusan in 2023 based on <a href="https://github.com/NathanDunfield/quadrics/">Jonathan Rogness and Nathan Dunfield's work</a>, shared under the same license.
+
+  <script src="js/secondordermodel.js"></script>
+</body>
+</html>
